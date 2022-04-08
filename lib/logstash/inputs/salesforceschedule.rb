@@ -1,4 +1,6 @@
 @@ -88,17 +88,42 @@ class LogStash::Inputs::Salesforce < LogStash::Inputs::Base
+  
+  config_name "salesforceschedule"
   config :sfdc_filters, :validate => :string, :default => ""
   # Setting this to true will convert SFDC's NamedFields__c to named_fields__c
   config :to_underscores, :validate => :boolean, :default => false
