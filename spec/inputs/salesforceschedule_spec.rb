@@ -1,11 +1,11 @@
 require "logstash/devutils/rspec/spec_helper"
-require "logstash/inputs/salesforce"
+require "logstash/inputs/salesforceschedule"
 require "vcr"
 require 'json'
 require "timecop"
 
 RSpec.describe LogStash::Inputs::Salesforce do
-  describe "inputs/salesforce" do
+  describe "inputs/salesforceschedule" do
     let(:options) do
       {
         "client_id" => "",
